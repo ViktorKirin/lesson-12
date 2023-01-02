@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Regular/Roboto-Regular.woff2);
+    src: url(../font/Roboto-Regular/Roboto-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Bold/Roboto-Bold.woff2);
+    src: url(../font/Roboto-Bold/Roboto-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sofia-Sans';
+    src: url(../font/sofia_sans/SofiaSans-Regular.woff2);
+    src: url(../font/sofia_sans/SofiaSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto-Medium/Roboto-Medium.woff2);
+    src: url(../font/Roboto-Medium/Roboto-Medium.woff);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-Bold/Montserrat-Bold.woff2);
+    src: url(../font/Montserrat-Bold/Montserrat-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-Regular/Montserrat-Regular.woff2);
+    src: url(../font/Montserrat-Regular/Montserrat-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --text-color: #46B1DE;
+    --head-text-color: #1B1D1F;
+    /* white text - button + footer  */
+    --white-text: #FFFFFF;
+    /* footer text */
+    --footer-text: #0F2D4A;
+}
+li,
+a,
+ul {
+    color: var(--head-text-color);
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 0px;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    /* padding: 0px 10px; */
+}
+.container-navigation {
+    max-width: 1180px;
+    height: 91px;
+    margin-top: 60px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+.logo {
+    display: flex;
+    width: 426px;
+    align-items: center;
+}
+.logo img {
+    margin-right: 7px;
+}
+.logo-text {
+    color: var(--text-color);
+    font-family: "Sofia-Sans";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 70%;
+
+}
+.logo-text span {
+    font-size: 26.8525px;
+    text-transform: none;
+
+}
+.navigation {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 80px;
+    padding-left: 77px;
+}
+.language {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.language span {
+    margin: 0px 5px;
+}
+.ua {
+    font-weight: 800;
+}
+.tell {
+    display: flex;
+    align-items: center;
+    margin-left: 69px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.first-screen{
+    background-image: url(../img/bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 663px;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    overflow-x:hidden;
+}
+.main-text{
+    padding-top: 185px;
+    font-family: 'Roboto';
+    font-style: normal;
+    
+}
+.main-text-upper {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.1em;
+    color: var(--head-text-color);
+    z-index: 2;
+    position: relative;
+}
+.main-text1 span {
+    color: var(--text-color);
+}
+.main-text2 {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--head-text-color);
+    z-index: 2;
+    position: relative;
+    
+}
+.link-buttons {
+    margin-top: 48px;
+    display:  grid;
+    grid-template-columns: repeat(2,180px);
+    gap: 120px;
+    z-index: 2;
+    position: relative;
+
+}
+.call-button,
+.service-button {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    padding: 16px 35px;
+
+}
+.call-button {
+    background: linear-gradient(97.59deg, #46B1DE 9.8%, var(--text-color) 95.1%);
+    box-shadow: 0px 2px 10px var(--text-color);
+    border-radius: 8px;
+    color:var(--white-text);
+}
+.service-button {
+    background: var(--white-text);
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px #DDE0DC;
+    border-radius: 8px;
+    color: var(--text-color);
+}
+.lady {
+    position: absolute;
+    /* left: 718px; */
+    z-index: 1;
+    left: calc(50% + 170px);
+}
