@@ -51,6 +51,7 @@
     --white-text: #FFFFFF;
     /* footer text */
     --footer-text: #0F2D4A;
+    --advantage:#A1C7D4;
 }
 li,
 a,
@@ -136,7 +137,7 @@ ul {
     position: relative;
     top: 0px;
     z-index: 1;
-    overflow-x:hidden;
+    overflow:hidden;
 }
 .main-text{
     padding-top: 185px;
@@ -153,10 +154,10 @@ ul {
     z-index: 2;
     position: relative;
 }
-.main-text1 span {
+.main-text-upper span {
     color: var(--text-color);
 }
-.main-text2 {
+.mmain-text-low {
     margin-top: 30px;
     font-weight: 400;
     font-size: 16px;
@@ -205,8 +206,102 @@ ul {
 }
 .lady {
     position: absolute;
-    /* left: 718px; */
     top: 200px;
     z-index: 1;
-    left: calc(50% + 170px);
+    left: 718px;
+}
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto) ;
+    justify-content: center;
+    gap: 70px;
+}
+.benefits {
+    margin-top: -45px;
+    width: 280px;
+    height: 120px;
+    display: flex;
+    padding: 35px 12px;
+    background: var(--white-text);
+    border: 1px solid #D8E1E1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    gap: 20px;
+}
+.value {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 76px;
+    color: var(--text-color);
+}
+.second-text-container {
+    margin-top: 90px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+.second-text {
+    font-size: 34px;
+    line-height: 130%;
+    color: var(--head-text-color);
+}
+.second-text span {
+    color: var(--text-color);
+}
+.second-text-container p{
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--head-text-color);
+}
+.six-advantage {
+    max-width: 1020px;
+    margin: 50px auto 0;
+    background-color: var(--advantage);
+    display: grid;
+    grid-template-columns: repeat(3,auto) ;
+    grid-template-rows: auto auto;
+    border-radius: 12px;
+    gap: 12px 40px;
+    grid-auto-flow: column;
+    padding: 15px;
+}
+.advantage {
+    background-color:var(--white-text);
+    max-width: 300px;
+    padding: 10px 18px 46px;
+    border-radius: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.advantage > div {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    justify-content:start;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.number {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+}
+.appointment {
+    display: flex;
+    flex-direction: column;
 }
