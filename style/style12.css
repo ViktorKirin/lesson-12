@@ -206,6 +206,7 @@ ul {
 .lady {
     position: absolute;
     /* left: 718px; */
+    top: 200px;
     z-index: 1;
     left: calc(50% + 170px);
 }
