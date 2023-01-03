@@ -351,7 +351,6 @@ ul {
     justify-content: center;
     gap: 10px;
     padding: 15px 10px;
-
 }
 .user span {
     border: 1px solid #000000;
@@ -368,7 +367,6 @@ ul {
     text-align: center;
     color: rgba(27, 29, 31, 0.51);
     width: 150px;
-
 }
 .sign-up a {
     background: var(--text-color);
@@ -389,3 +387,130 @@ ul {
     width: 24px;
     height: 24px;
 }
+.foto {
+    margin-top: 90px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+.foto img {
+    border-radius: 8px;
+}
+.footer-container {
+    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+    height: 400px;
+    margin-top: 90px;
+    display: flex;
+    position: relative;
+}
+.left-footer {
+    margin-top: 60px;
+    margin-left: 113px;
+}
+.logo-footer {
+    display: flex;
+    font-family: "Sofia-Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38.7869px;
+    line-height: 60%;
+    align-items: center;
+    color: var(--footer-text);
+}
+.low {
+    font-size: 26.8525px;
+    line-height: 140%;
+}
+.logo-footer img {
+    width: 77.57px;
+    height: 80.56px;
+}
+.worktime-workinghours{
+    display: flex;
+    gap: 163px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    margin-top: 30px;
+    color: var(--footer-text);
+}
+.worktime {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.lang a {
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    font-weight: 600;
+}
+.workinghours {
+    display: grid;
+    align-content: center;
+}
+.workinghours span:nth-child(1) {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.right-footer {
+    margin-top: 60px;
+    margin-left: 377px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+}
+div.right-footer a {
+    color: var(--white-text);
+}
+.contacts-header {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color:var(--white-text);
+}
+.contacts-inf {
+    margin-top: 20px;
+    display: grid;
+    color: var(--white-text);
+    font-size: 20px;
+    line-height: 135%;
+    gap: 15px;
+}
+.messengers-logo {
+    display: flex;
+    gap: 31px;
+}
+.messengers-logo a {
+    width: 28px;
+    height: 28px;
+}
+.footer-tell img,
+.inst img,
+.email img {
+    width: 28px;
+    height: 28px;
+}
+.footer-tell,
+.inst,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.copyright {
+    color: var(--white-text);
+    margin-top: -25px;
+    position: relative;
+    margin-left: 530px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    font-family: 'Roboto';
+}
+
