@@ -66,6 +66,9 @@ ul {
     margin: 0 auto;
     padding: 0px 10px;
 }
+
+/* HEADER */
+
 .container-navigation {
     max-width: 1180px;
     height: 91px;
@@ -128,11 +131,12 @@ ul {
     margin-left: 69px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-@media (max-width:992px)
-{}
+
+/* MAIN */
+
 .first-screen{
     background-image: url(../img/lady.png), url(../img/bgc.jpg) ;
-    background-position: left 718px bottom, left top ;
+    background-position: left calc(50% + 359px) bottom, left top ;
     border: 1px solid #000000;
     background-repeat: no-repeat,no-repeat ;
     background-size: 572px, cover ;
@@ -305,6 +309,9 @@ ul {
     font-size: 40px;
     line-height: 47px;
 }
+
+/* MAKE APPOINTMENT */
+
 .appointment-container {
     background: var(--white-text);
     border: 1px solid #D9D9D9;
@@ -391,6 +398,9 @@ ul {
     width: 24px;
     height: 24px;
 }
+
+/* Three foto */
+
 .foto {
     margin-top: 90px;
     display: flex;
@@ -400,8 +410,13 @@ ul {
 .foto img {
     border-radius: 8px;
 }
-.footer-container {
+
+/* FOOTER */
+
+footer {
     background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+}
+.footer-container {
     height: 400px;
     margin-top: 90px;
     display: flex;
@@ -511,10 +526,172 @@ div.right-footer a {
     color: var(--white-text);
     margin-top: -25px;
     position: relative;
-    margin-left: 530px;
+    margin-left: 510px;
     font-weight: 400;
     font-size: 13px;
     line-height: 130%;
     font-family: 'Roboto';
 }
 
+/* MEDIA 1180px */
+
+@media (max-width:1180px) {
+    .container-navigation {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        margin-right: 7px;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        gap: 0px;
+        padding-left: 0px;
+    }
+    .language {
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .language span {
+        margin: 0px 5px;
+    }
+    .ua {
+        font-weight: 800;
+    }
+    .tell {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .benefits-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 280px);
+        justify-content: center;
+        gap: 50px;
+    }
+    .foto {
+        display: flex;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+    .left-footer {
+        margin-left: 0px;
+    }
+    .right-footer {
+        margin-left: 0px;
+    }
+    .copyright {
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: -15px;
+        margin-right: 2%;
+    }
+    .footer-container {
+        justify-content: space-around;
+    }
+}
+/* MEDIA 992 px */
+@media (max-width:992px) {
+    .container-navigation {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        margin-right: 7px;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        gap: 0px;
+        padding-left: 0px;
+    }
+    .language {
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .language span {
+        margin: 0px 5px;
+    }
+    .ua {
+        font-weight: 800;
+    }
+    .tell {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .benefits-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 280px);
+        justify-content: center;
+        gap: 50px;
+    }
+    .six-advantage {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: auto auto;
+        border-radius: 12px;
+        gap: 12px 40px;
+        /* grid-auto-flow: column; */
+        flex-direction: column;
+        padding: 15px;
+    }
+    .registration {
+        margin-top: 45px;
+        display: flex;
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+    .foto {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto img {
+        width: 280px;
+        height: 128px;
+    }
+    .left-footer {
+        margin-left: 0px;
+    }
+    .right-footer {
+        margin-left: 0px;
+    }
+    .copyright {
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: -15px;
+        margin-right: 2%;
+    }
+    .footer-container {
+        justify-content: space-around;
+    }
+}
