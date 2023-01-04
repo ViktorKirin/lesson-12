@@ -64,7 +64,7 @@ ul {
 .container {
     max-width: 1180px;
     margin: 0 auto;
-    /* padding: 0px 10px; */
+    padding: 0px 10px;
 }
 .container-navigation {
     max-width: 1180px;
@@ -79,7 +79,7 @@ ul {
 }
 .logo {
     display: flex;
-    width: 426px;
+    max-width: 426px;
     align-items: center;
 }
 .logo img {
