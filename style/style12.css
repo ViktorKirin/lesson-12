@@ -130,6 +130,7 @@ ul {
 }
 .first-screen{
     background-image: url(../img/bgc.jpg);
+    border: 1px solid #000000;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
