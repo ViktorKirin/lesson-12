@@ -128,11 +128,14 @@ ul {
     margin-left: 69px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+@media (max-width:992px)
+{}
 .first-screen{
-    background-image: url(../img/bgc.jpg);
+    background-image: url(../img/lady.png), url(../img/bgc.jpg) ;
+    background-position: left 718px bottom, left top ;
     border: 1px solid #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat,no-repeat ;
+    background-size: 572px, cover ;
     max-width: 100%;
     height: 663px;
     position: relative;
@@ -205,21 +208,21 @@ ul {
     border-radius: 8px;
     color: var(--text-color);
 }
-.lady {
+/* .lady {
     position: absolute;
     top: 200px;
     z-index: 1;
     left: 718px;
-}
+} */
 .benefits-container {
     display: grid;
-    grid-template-columns: repeat(3,auto) ;
+    grid-template-columns: repeat(auto-fit, 280px) ;
     justify-content: center;
     gap: 70px;
 }
 .benefits {
     margin-top: -45px;
-    width: 280px;
+    max-width: 280px;
     height: 120px;
     display: flex;
     padding: 35px 12px;
@@ -268,7 +271,7 @@ ul {
     margin: 50px auto 0;
     background-color: var(--advantage);
     display: grid;
-    grid-template-columns: repeat(3,auto) ;
+    grid-template-columns: repeat(3,auto);
     grid-template-rows: auto auto;
     border-radius: 12px;
     gap: 12px 40px;
