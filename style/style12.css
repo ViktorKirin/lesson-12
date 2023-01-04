@@ -53,6 +53,12 @@
     --footer-text: #0F2D4A;
     --advantage:#A1C7D4;
 }
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+} */
 li,
 a,
 ul {
@@ -647,25 +653,29 @@ div.right-footer a {
     }
     .benefits-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 280px);
+        grid-template-columns: repeat(1, 280px);
         justify-content: center;
         gap: 50px;
     }
     .six-advantage {
+        max-width: 80vw;
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-template-rows: auto auto;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto auto auto; 
         border-radius: 12px;
-        gap: 12px 40px;
-        /* grid-auto-flow: column; */
-        flex-direction: column;
+        gap: 10px 10px;
+        align-items: center;
         padding: 15px;
+        justify-content: space-evenly
+    }
+    .advantage {
+        height: 176px;
     }
     .registration {
         margin-top: 45px;
         display: flex;
         gap: 0px;
-        justify-content: space-evenly;
+        justify-content: space-e;
     }
     .foto {
         display: flex;
