@@ -563,84 +563,8 @@ div.right-footer a {
         background-repeat: no-repeat,no-repeat ;
         background-size: 572px, cover ;
         max-width: 100%;
-        /* height: 663px;
-        position: relative;
-        top: 0px;
-        z-index: 1;
-        overflow:hidden; */
     }
 }
-/* MEDIA 1180px
-
-@media (max-width:1180px) {
-    .container-navigation {
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-    .logo img {
-        margin-right: 7px;
-    }
-    .navigation {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nav-menu {
-        display: flex;
-        justify-content: space-around;
-        gap: 0px;
-        padding-left: 0px;
-    }
-    .language {
-        padding-left: 0px;
-        display: flex;
-        align-items: center;
-    }
-    .language span {
-        margin: 0px 5px;
-    }
-    .ua {
-        font-weight: 800;
-    }
-    .tell {
-        display: flex;
-        align-items: center;
-        margin-left: 0px;
-    }
-    .benefits-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 280px);
-        justify-content: center;
-        gap: 50px;
-    }
-    .foto {
-        display: flex;
-        gap: 0px;
-        justify-content: space-evenly;
-    }
-    .left-footer {
-        margin-left: 0px;
-    }
-    .right-footer {
-        margin-left: 0px;
-    }
-    .copyright {
-        margin-left: 0px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-top: -15px;
-        margin-right: 2%;
-    }
-    .footer-container {
-        justify-content: space-around;
-    }
-} */
 /* MEDIA 992 px */
 @media (max-width:992px) {
     .container-navigation {
@@ -688,9 +612,6 @@ div.right-footer a {
         align-items: center;
         margin-left: 0px;
     }
-    /* .link-buttons {
-        justify-content: space-around;
-    } */
     .benefits-container {
         display: grid;
         grid-template-columns: repeat(1, 280px);
@@ -760,14 +681,21 @@ div.right-footer a {
         flex-direction: column;
         align-items: center;
     }
-.navigation {
+    .navigation {
         width: max-content;
     }
-.first-screen{
+    .first-screen{
         background-size: calc(572px/1.5) , cover ;
     }
 }
 @media (max-width:700px) {
+    .container-navigation {
+        top: 30px;
+        height: auto;
+    }
+    nav.navigation {
+        display: none;
+    }
     .logo-text {
         font-size: 20px;
     }
@@ -777,6 +705,9 @@ div.right-footer a {
     .logo img {
         margin-right: 7px;
         height: 50px;
+    }
+    .main-text {
+        padding-top: 116px;
     }
     .main-text-upper {
         font-size: 25px;
@@ -793,8 +724,18 @@ div.right-footer a {
     .call-button, .service-button {
         width: 115px;
         font-size: 16px;
+        padding: 0px 0px;
+        align-items: center;
     }
-
+    .first-screen {
+        background-position: center bottom, left top;
+    }
+    .benefits-container {
+        gap: 0px;
+    }
+    .benefits {
+        margin-top: 20px;
+    }
     .first-screen{
         background-size: calc(572px/2) , cover ;
     }
@@ -839,14 +780,14 @@ div.right-footer a {
         font-size: 25px;
     }
     .logo-footer {
-        font-size: 20px;
+        font-size: 27px;
     }
     .low {
         font-size: 16px;
     }
     .logo-footer img {
         width: 50px;
-        height: 50px;
+        height: 56px;
     }
     .user input {
         font-size: 14px;
@@ -854,5 +795,108 @@ div.right-footer a {
 
 }
 @media (max-width:480px) {
+    div.language {
+        display: none;
+    }
+    .logo img {
+        height: 35px;
+    }
+    .logo-text {
+        font-size: 16.6926px;
+    }
+    .logo-text span {
+        font-size: 11.5564px;
+    }
+    .tell a  {
+        font-size:12px;
+    }
+    .tell img {
+        height: 15px;
+    }
+    .main-text-upper {
+        font-size: 22px;
+    }
+    .main-text-low {
+        font-size: 12px;
+    }
+    .link-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    .first-screen {
+        height: 576px;
+    }
+    .call-button, 
+    .service-button {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .first-screen{
+        background-size: calc(208px) , cover ;
+    }
+        /* ОТ сюда  */
+
+    .second-text {
+        font-size: 22px;
+    }
+    .second-text-container p {
+    font-size: 12px;
+    }
+    .number {
+        font-size: 25px;
+    }
+    .advantage {
+        font-size: 10px;
+        padding: 5px 5px;
+        height: max-content;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .advantage > div {
+        font-size: 12px;
+        justify-content: space-evenly;
+    }
+    .appointment {
+        font-size: 12px;
+    }
+    .appointment span:nth-child(odd) {
+        font-size: 20px;
+    }
+    .six-advantage {
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        height: max-content;
+    }
+    .logo-footer {
+        margin-left: 10%;
+    }
+    .worktime-workinghours {
+        gap: 0px;
+        justify-content: space-around;
+    }
+    .right-footer {
+        padding-bottom: 36px;
+    }
+    .contacts-header {
+        font-size: 21px;
+        margin-left: 10%;
+    }
+    .contacts-inf { 
+        font-size: 14px;
+        margin-left: 10%;
+    }
+    .lang a {
+        font-size: 17px;
+    }
+    .copyright {
+        font-size: 11.1548px;
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
 
 }
