@@ -44,6 +44,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+}
 :root {
     --text-color: #46B1DE;
     --head-text-color: #1B1D1F;
@@ -422,6 +425,8 @@ ul {
     left: -10px;
 }
 .attention {
+    font-family: 'Roboto';
+    font-style: normal;
     margin-top: 100px;
     font-weight: 400;
     font-size: 20px;
@@ -1045,18 +1050,15 @@ div.right-footer a {
     .first-screen{
         background-size: calc(208px) , cover ;
     }
-        /* ОТ сюда  */
-
     .second-text {
         font-size: 22px;
     }
     .second-text-container p {
-    font-size: 12px;
+        font-size: 12px;
     }
     .number {
         font-size: 25px;
     }
-
     .advantage {
         font-size: 10px;
         padding: 5px 5px;
@@ -1068,6 +1070,11 @@ div.right-footer a {
         font-size: 12px;
         justify-content: space-evenly;
         gap: 0px;
+    }
+    .tooth-img {
+        width: 200px;
+        left: calc(50% - 100px);
+        top: 180px;
     }
     .appointment {
         font-size: 12px;
