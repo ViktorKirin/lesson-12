@@ -47,6 +47,10 @@
 html {
     overflow-x: hidden;
 }
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
 :root {
     --text-color: #46B1DE;
     --head-text-color: #1B1D1F;
@@ -74,15 +78,13 @@ ul {
 /* HEADER */
 
 .container-navigation {
-    width: 100%;
+    width: 99%;
     height: 91px;
     top: 60px;
     position: absolute;
     z-index: 2;
     display: flex;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
 }
 .logo {
     display: flex;
@@ -102,7 +104,7 @@ ul {
 
 }
 .logo-text span {
-    font-size: 26.8525px;
+    font-size: 27px;
     text-transform: none;
 
 }
@@ -153,7 +155,6 @@ ul {
 }
 .main-text{
     padding-top: 185px;
-    font-family: 'Roboto';
     font-style: normal;
     
 }
@@ -196,7 +197,6 @@ ul {
     height: 60px;
     border-radius: 8px;
     text-transform: uppercase;
-    font-family: 'Roboto';
     font-weight: 600;
     font-size: 19px;
     line-height: 140%;
@@ -241,9 +241,7 @@ ul {
     align-items: center;
     z-index: 2;
     position: relative;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     gap: 20px;
@@ -257,9 +255,7 @@ ul {
 .second-text-container {
     margin-top: 90px;
     text-align: center;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
 }
 .second-text {
     font-size: 34px;
@@ -291,9 +287,7 @@ ul {
     max-width: 300px;
     padding: 10px 18px 46px;
     border-radius: 12px;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
@@ -319,9 +313,7 @@ ul {
     margin-top: 90px;
 }
 .tooth-header {
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 34px;
     line-height: 40px;
     color: var(--head-text-color);
@@ -353,11 +345,7 @@ ul {
 .left-side {
     text-align: right;
 }
-.tooth-text-block {
-    font-family: 'Roboto';
-}
 .tooth-text-block p:nth-child(even) {
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: var(--head-text-color);
@@ -366,7 +354,6 @@ ul {
     font-weight: 600;
     font-size: 20px;
     color: var(--text-color);
-    font-family: 'Roboto';
     margin-bottom: 5px;
 }
 .tooth {
@@ -425,10 +412,8 @@ ul {
     left: -10px;
 }
 .attention {
-    font-family: 'Roboto';
     font-style: normal;
     margin-top: 100px;
-    font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     color: var(--text-color);
@@ -464,7 +449,6 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 30px 25px 46px;
-    font-family: 'Roboto';
     font-style: normal;
     text-align: center;
     color: var(--head-text-color);
@@ -476,7 +460,6 @@ ul {
     text-transform: uppercase;
 }
 .appointment span:nth-child(even) {
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
 }
@@ -503,6 +486,10 @@ ul {
     background-color: black;
     box-sizing: border-box;
 }
+.button-sign-up { 
+    border: none; 
+    padding: 0px;
+}
 .user input {
     border: none;
     background: none;
@@ -525,7 +512,7 @@ ul {
     color: var(--white-text);
 }
 .name img {
-    width: 22.15px;
+    width: 22px;
     height: 24px;
 }
 .phone-number img {
@@ -533,15 +520,15 @@ ul {
     height: 24px;
 }
 
-/* Three foto */
+/* Three photo */
 
-.foto {
+.photo {
     margin-top: 90px;
     display: flex;
     gap: 70px;
     justify-content: center;
 }
-.foto img {
+.photo img {
     border-radius: 8px;
 }
 
@@ -558,14 +545,12 @@ footer {
 }
 .left-footer {
     margin-top: 60px;
-    /* margin-left: 113px; */
 }
 .logo-footer {
     display: flex;
     font-family: "Sofia-Sans";
     font-style: normal;
-    font-weight: 400;
-    font-size: 38.7869px;
+    font-size: 39px;
     line-height: 60%;
     align-items: center;
     color: var(--footer-text);
@@ -575,15 +560,13 @@ footer {
     line-height: 140%;
 }
 .logo-footer img {
-    width: 77.57px;
-    height: 80.56px;
+    width: 77px;
+    height: 80px;
 }
 .worktime-workinghours{
     display: flex;
     gap: 163px;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 135%;
     margin-top: 30px;
@@ -611,7 +594,6 @@ footer {
 .right-footer {
     margin-top: 60px;
     margin-left: 377px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -663,10 +645,8 @@ div.right-footer a {
     /* margin-left: 510px; */
     display: flex;
     justify-content: flex-end;
-    font-weight: 400;
     font-size: 13px;
     line-height: 130%;
-    font-family: 'Roboto';
 }
 @media (max-width:1100px) {
     .container-navigation {
@@ -784,13 +764,13 @@ div.right-footer a {
     .appointment-container {
         max-height:max-content;
     }
-    .foto {
+    .photo {
         display: flex;
         gap: 30px;
         flex-direction: column;
         align-items: center;
     }
-    .foto img {
+    .photo img {
         width: 280px;
         height: 128px;
     }
