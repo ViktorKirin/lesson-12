@@ -793,7 +793,7 @@ div.right-footer a {
 /* MEDIA 992 px */
 @media (max-width:992px) {
     .container-navigation {
-        max-width: 100%;
+        max-width: 98%;
         display: flex;
     }
     .logo {
