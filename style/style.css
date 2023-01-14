@@ -1248,7 +1248,7 @@ div.right-footer a {
         position: absolute;
         width: 80vw;
         height: 40vh;
-        margin-top: -77px;
+        margin-top: -140px;
         padding: 50px;
         padding-top: 80px;
         left: 20vw;
@@ -1279,6 +1279,12 @@ div.right-footer a {
     }
     nav.navigation {
         display: none;
+    }
+    .nav-menu-burger {
+        position: absolute;
+        width: 80vw;
+        height: 40vh;
+        margin-top: -80px;
     }
     .tell a::before {
         top: 14px;
