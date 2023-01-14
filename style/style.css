@@ -1180,26 +1180,27 @@ div.right-footer a {
         display: block;
         position: absolute;
         z-index: 2;
+        top: 140px;
+        left: calc(50% + 300px);
     }
-    .burger {
-        position: relative;
-        z-index: 2;
+    .span-burger {
+        display: block;
         width: 15px;
         height: 1px;
-        left: calc(100% - 60px);
-        top: 135px;
         border-top: #000000 solid 1px;
         cursor: pointer;
     }
-    .burger::before {
+    /* .burger::before  */
+    .burger span::before {
         content:"";
         width: 15px;
         border-top: #000000 solid 1px;
         z-index: 2;
         position: absolute;
-        top: -6px;
+        top: -4px;
     }
-    .burger::after {
+    /* .burger::after */
+    .burger span::after{
         content:"";
         width: 15px;
         height: 1px;
@@ -1208,32 +1209,31 @@ div.right-footer a {
         position: absolute;
         top: 4px;
     }
-    .burger:focus:before,
-    .burger:hover:before {
+    /* .burger:focus:before,
+    .burger:hover:before  */
+    .burger input:checked ~ span::before{
         content: '';
         position: absolute;
-        width: 100%;
+        /* width: 100%; */
         top: 50%;
         transform: rotate(45deg);
         transition-duration: .3s;
         border-top: var(--text-color) solid 1px;
     }
-    .burger:focus::after,
-    .burger:hover::after {
+    /* .burger:focus::after,
+    .burger:hover::after  */
+    .burger input:checked ~ span::after{
         content: '';
         position: absolute;
-        width: 100%;
         top: 50%;
         transform: rotate(-45deg);
         transition-duration: .3s;
         border-top: var(--text-color) solid 1px;
     }
-    .burger:focus,
-    .burger:hover {
+    /* .burger:focus,
+    .burger:hover  */
+    .burger input:checked ~ .span-burger {
         border-top: 0px;
-    }
-    .burger {
-
     }
     .burger input {
         width: 15px;
@@ -1251,7 +1251,7 @@ div.right-footer a {
         margin-top: -77px;
         padding: 50px;
         padding-top: 80px;
-        left: 100px;
+        left: 20vw;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -1295,7 +1295,7 @@ div.right-footer a {
         height: 50px;
     }
     .burger {
-        left: calc(100% - 60px);
+        left: calc(100% - 70px);
         top: 80px;
     }
     .main-text {
