@@ -1,0 +1,9 @@
+
+@mixin triangle($width, $color) {
+    width: $width;
+    height: $width;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+    margin: 30px auto 0px;
+}
