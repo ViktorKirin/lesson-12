@@ -1,0 +1,17 @@
+title {
+    font-family: 'Roboto';
+    span {
+        color: $text-color;
+        font-weight: 600;
+    }
+}
+
+sectionMargin {
+    @media (min-width:768px) {
+            margin-top: 90px;
+    }
+
+    @media (max-width:768px) {
+            margin-top: 30px;
+    }
+}
